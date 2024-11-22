@@ -13,6 +13,7 @@ from src.Homework import test03
 # 2. 判断两数是否为素数,若为素数，
 
 def judgeTwoNumbers(num1:int ,num2 : int,*args ):
+    
     bool1= test03.judgePrimeNumber02(num1)
     bool2= test03.judgePrimeNumber02(num2)
     if  bool1 and bool2 == True :

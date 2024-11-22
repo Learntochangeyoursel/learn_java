@@ -16,4 +16,19 @@ public class RemoveElement {
         // 返回相关相同元素的数量
         return left;
     }
+
+    // 这是一个改进的方法，在上一个代码的基础上合并了一行代码。
+    public int removeElement2(int[] nums, int val){
+        int left = 0;
+        for(int right = 0; right < nums.length; right++){
+            if (nums[right]  != val){
+                nums[left]  = nums[right];
+                left++;
+            }
+        }
+        return left;
+
+
+    }
 }
+
